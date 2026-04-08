@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My first CSS</title>
+    <style>
+      .profile-card {
+        width: 400px;
+        background-color: lightgray;
+        padding: 20px;
+        margin: 30px auto;
+        border: 2px solid black;
+      }
+      #img {
+        float: left;
+        width: 100px;
+        margin-right: 20px;
+      }
+      h1 {
+        text-align: center;
+        color: blue;
+      }
+      p {
+        font-size: 17px;
+        padding: 10px;
+        background-color: rgb(91, 88, 88);
+      }
+      .profile-card::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      #contact {
+        display: block;
+        width: fit-content;
+        margin: 10px auto;
+        background-color: blue;
+        color: rgb(12, 11, 11);
+      }
+      #contact:hover {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile-card">
+      <img src="images/favicon.jpg" alt="pic" id="img" />
+      <h1>ISMAEL AWEL</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae itaque
+        repellendus cum explicabo dolorem?
+      </p>
+      <a href="#" id="contact">Contact ME</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.1rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: rgba(0, 0, 0, 0.308);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: rgb(59, 28, 28);
+  color: azure;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+.navlist a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+}
+.navlist a:hover {
+  color: rgb(165, 165, 165);
+}
+.names h1 {
+  color: rgb(28, 26, 26);
+  padding: 10px;
+  font-size: 3rem;
+  text-align: center;
+}
+.bios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 6px;
+  margin: 10px 20px;
+  padding: 10px;
+  max-width: 100%;
+  height: 300px;
+  gap: 20px;
+  overflow: hidden;
+}
+.bios img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid black;
+  object-fit: cover;
+}
+.bio {
+  text-align: center;
+  margin: 0px 10px;
+  padding: 15px;
+  max-width: 700px;
+}
+.bio p {
+  font-size: 1.3rem;
+  line-height: 1.8em;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 250px 250px;
+  gap: 6px;
+  margin: 20px 10%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: rgb(112, 112, 112);
+  border: 2px solid black;
+  padding: 6px;
+}
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.eating {
+  grid-column: span 2;
+  grid-row: span 2;
+  border: 2px solid rgb(0, 0, 0);
+}
+.gaming {
+  grid-column: span 1;
+  grid-row: span 1;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.sleeping {
+  grid-column: span 1;
+  grid-row: span 1;
+  border: 2px solid rgb(0, 0, 0);
+}
+.coding {
+  grid-column: span 2;
+  grid-row: span 1;
+  border: 2px solid rgb(0, 0, 0);
+}
+.skill {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.list_head {
+  width: 300px;
+  margin: 30px auto;
+}
+.main_list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  padding: 10px 30px;
+  margin: 30px auto 50px auto;
+  text-align: center;
+  border: 2px solid rgb(11, 8, 8);
+  border-radius: 10px;
+}
+.list_box {
+  flex: 1;
+  gap: 30px;
+}
+.lists {
+  font-size: 1.5rem;
+  font-weight: 500;
+  list-style-type: none;
+  padding: 10px;
+}
+.lists li {
+  padding: 10px;
+}
+.lists li:hover {
+  background-color: rgba(158, 158, 158, 0.886);
+}
+.list_head {
+  text-decoration: underline;
+}
+.table {
+  background-color: rgb(174, 174, 174);
+  border-collapse: collapse;
+  min-width: 900px;
+  font-size: 1.5rem;
+  margin: 30px auto;
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+}
+.table_row {
+  border-bottom: #cdcdcd solid;
+}
+.table_head {
+  background-color: rgb(42, 117, 42);
+  color: azure;
+  text-align: left;
+  font-weight: bold;
+  border-radius: 100px;
+}
+.table_head th {
+  padding: 10px 15px;
+}
+.table_row:nth-of-type(even) {
+  background-color: rgb(167, 165, 164);
+}
+.table_row:hover {
+  background-color: rgb(135, 135, 135);
+}
+.table tr:last-of-type {
+  border-bottom: rgb(42, 117, 42);
+}
+.form_container {
+  border: 2px solid black;
+  width: 400px;
+  padding: 20px 40px;
+  margin: 30px auto;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: rgba(84, 77, 68, 0.361);
+}
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.form label {
+  color: #210000;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.form input,
+.form textarea {
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 7px 3px;
+  background-color: #d7d8da;
+}
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border: 2px solid rgb(51, 114, 93);
+  box-shadow: 0px 0px 3px black;
+}
+.form .form_button {
+  border: none;
+  border-radius: 7px;
+  background-color: rgba(39, 201, 39, 0.671);
+  color: #ffffff;
+  padding: 10px 0px;
+  width: 150px;
+  margin: 0px auto;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.form .form_button:hover {
+  background-color: rgba(47, 236, 14, 0.671);
+  border: 1px solid rgb(40, 212, 132);
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
+  color: #cdcdcd;
+}
+.list__head h3 {
+  width: 200px;
+  margin: 10px auto;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.right_footer_list a {
+  text-decoration: none;
+  color: rgb(174, 175, 172);
+  font-size: 1.3rem;
+}
+.right_footer_list a:hover {
+  color: greenyellow;
+}
+
+@media screen and (max-width: 768px) {
+  .bios {
+    flex-direction: column;
+    height: auto;
+    font-size: 1.1rem;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .table {
+    min-width: 480px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  button {
+    width: 100%;
+  }
+  input {
+    width: 100%;
+  }
+  .nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+  }
+  .form_container {
+    width: 100%;
+  }
+  .table {
+    min-width: 480px;
+  }
+}

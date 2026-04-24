@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h2>My To-Do List</h2>
+
+        <form>
+          <input
+            type="text"
+            id="input-Box"
+            placeholder="Write your task here"
+          />
+          <button type="button" onclick="addTask()">Add Task</button>
+        </form>
+        <ul id="toDO">
+          <!-- <li class="checked">            
+            <p>salnvd</p>
+            <div class="list_button">
+              <button id="complet">Finish</button>
+              <button id="delete">Delete</button>
+            </div>
+          </li> -->
+        </ul>
+        <button class="clear">Clear All</button>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

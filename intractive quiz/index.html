@@ -1,0 +1,80 @@
+<!doctype html>
+<html >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+
+      <div id="start-screen">
+        <h1>Quiz Challenge</h1>
+        <p>10 Questions | 30 Seconds Each | 1 Point Each</p>
+        <button onclick="startQuiz()">Start Quiz</button>
+      </div>
+
+      <div id="quiz-screen" class="hide">
+        <div class="header">
+          <span id="question-counter">Question 1 of 10</span>
+          <span id="timer">30</span>
+        </div>
+
+        <div class="progress-bar">
+          <div id="progress-fill"></div>
+        </div>
+
+        <div class="question-box">
+          <h2 id="question-text">Question goes here</h2>
+          <div id="options-box">
+          </div>
+        </div>
+
+        <div class="nav-buttons">
+          <button onclick="prevQuestion()" id="prev-btn">Previous</button>
+          <button onclick="nextQuestion()" id="next-btn">Next</button>
+        </div>
+      </div>
+
+      <!-- Results Screen -->
+      <div id="result-screen" class="hide">
+        <h1>Quiz Complete!</h1>
+
+        <div class="score-box">
+          <h2 id="final-score">Score: 0/10</h2>
+          <h3 id="percentage">0%</h3>
+          <p id="message">Message</p>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <span id="correct-count">0</span>
+            <label>Correct</label>
+          </div>
+          <div class="stat">
+            <span id="incorrect-count">0</span>
+            <label>Incorrect</label>
+          </div>
+          <div class="stat">
+            <span id="unanswered-count">0</span>
+            <label>Unanswered</label>
+          </div>
+          <div class="stat">
+            <span>10</span>
+            <label>Total</label>
+          </div>
+        </div>
+
+        <div id="review-box">
+          <h3>Review</h3>
+          <!-- JS -->
+        </div>
+
+        <button onclick="restartQuiz()">Restart Quiz</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
